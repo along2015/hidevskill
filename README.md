@@ -1,7 +1,1 @@
-echo "# hidevskill" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/along2015/hidevskill.git
-git push -u origin main
+全流程研发规格工作流（增强版）：按"需求澄清 → 概要设计 → 详细设计 → 任务拆解 → 编码实施 → 功能测试验收"六个阶段驱动功能开发，每个阶段在项目 docs/specs 目录下按需求 ID 建档，按规约产出并维护一份 markdown 文档，通过状态看板 README.md 实现跨对话上下文延续；支持单项目多需求管理，通过项目级汇总索引 INDEX.md 与 REQ-{三位序号} 编号规则统一登记所有需求。内置两项增强能力：① 限制条款机制——启动时读取项目 docs/specs/RESTRICTIONS.md 限制配置文件，全程保护禁改代码与资源（哪些代码不能动）；② 测试环节增强——功能测试验收阶段自动留存测试截图证据（screenshots/ 目录），并在验收完成后生成独立的测试报告 07-test-report.md。当用户提出新功能/新需求开发、需求分析、方案设计、任务拆解、需求清单/进度汇总、测试报告输出，或要求继续/恢复某个此前开发任务（如"继续上次的开发""查看 XX 需求的进度"）时，应使用此 skill。
